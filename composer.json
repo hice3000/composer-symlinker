@@ -1,5 +1,6 @@
 {
     "name": "hice/composer-symlinker",
+    "description": "Symlink or Mirror directories directly in your composer.json.",
     "authors": [
         {
             "name": "Malte N.",
