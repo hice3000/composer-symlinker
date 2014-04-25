@@ -1,0 +1,15 @@
+{
+    "name": "hice/composer-symlinker",
+    "authors": [
+        {
+            "name": "Malte N.",
+            "email": "malte.n@live.de"
+        }
+    ],
+    "require": {
+        "symfony/filesystem": "~2.4"
+    },
+    "autoload": {
+        "psr-0": { "Hice\\Symlinker\\": "src/" }
+    }
+}
