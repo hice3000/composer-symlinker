@@ -76,7 +76,7 @@ class ScriptSymlinker
     public static function findDefinitions(Event $event)
     {
         $extra = $event->getComposer()->getPackage()->getExtra();
-        $root = $extra['facemanga-symlinks']; // the key in "extra"
+        $root = $extra['hice-symlinks']; // the key in "extra"
         $symlinks = array();
         $fs = new Filesystem();
         
@@ -90,7 +90,7 @@ class ScriptSymlinker
     public static function loadConfig(Event $event)
     {
         $extra = $event->getComposer()->getPackage()->getExtra();
-        $root = $extra['facemanga-symlinks']; // the key in "extra"
+        $root = $extra['hice-symlinks']; // the key in "extra"
         $config = array();
         
         $config['always_mirror'] = (array_key_exists('always-mirror', $root)) ? $root['always-mirror'] : false;
